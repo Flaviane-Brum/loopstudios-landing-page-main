@@ -23,7 +23,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <div class="container-header">
         <div class="container-flex">
           <div class="header-logo">
@@ -32,11 +32,17 @@
             </a>
           </div>
           <nav class="nav">
-            <button class="btn-menu" aria-expanded="false" aria-controls="menu" aria-label="Open menu" aria-haspopup="true"></button>
-            <ul class="menu"  role="menu" id="menu">
+            <button
+              class="btn-menu"
+              aria-expanded="false"
+              aria-controls="menu"
+              aria-label="Open menu"
+              aria-haspopup="true"
+            ></button>
+            <ul class="menu">
               <li><a href="#about"> About</a></li>
-              <li><a href="#"> Careers</a></li>
-              <li><a href="#"> Events</a></li>
+              <li><a href="/"> Careers</a></li>
+              <li><a href="/"> Events</a></li>
               <li><a href="#products"> Products</a></li>
               <li><a href="#footer"> Support</a></li>
             </ul>
@@ -49,99 +55,138 @@
       </div>
     </header>
     <main>
-
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-flex">
-          <div class="about-img">
-            <img
-              src="./images/desktop/image-interactive.jpg"
-              alt="Man standing at with VR headset "
-            />
-          </div>
-          <div class="about-text">
-            <h2>The leader in interactive VR</h2>
-            <p>
-              Founded in 2011, Loopstudios has been producing world-class
-              virtual reality projects for some of the best companies around the
-              globe. Our award-winning creations have transformed businesses
-              through digital experiences that bind to their brand.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="products" id="products">
-      <div class="container">
-        <div class="products-call">
-          <h2>Our creations</h2>
-          <button class="btn-products">See all</button>
-        </div>
-
-        <div class="card-grid">
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-deep-earth.jpg"/>
-              <img src="images/desktop/image-deep-earth.jpg" alt="deep-earth" />
-            </picture>
-            <span>Deep earth</span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-night-arcade.jpg"/>
-              <img src="images/desktop/image-night-arcade.jpg" alt="night-arcade" />
-            </picture>
-            
-            <span>Night arcade </span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-soccer-team.jpg"/>
-              <img src="images/desktop/image-soccer-team.jpg" alt="soccer-team" />
-            </picture>
-            <span>Soccer team VR</span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-grid.jpg"/>
-              <img src="images/desktop/image-grid.jpg" alt="image-grid" />
-            </picture>
-            <span>The grid</span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-from-above.jpg"/>
-              <img src="images/desktop/image-from-above.jpg" alt="image-from-above" />
-            </picture>
-            <span class="up">From up above vr</span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-pocket-borealis.jpg"/>
-              <img src="images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis" />
-            </picture>
-            <span>Pocket borealis</span>
-          </div>
-          <div class="card">
-            <picture>
-              <source media="(max-width:768px)" srcset="images/mobile/image-curiosity.jpg"/>
-              <img src="images/desktop/image-curiosity.jpg" alt="curiosity" />
-            </picture>
-            <span>The curiosity</span>
-          </div>
-          <div class="card">
-            <picture>
-          <source media="(max-width:768px)" srcset="images/mobile/image-fisheye.jpg"/>
-
-          <img src="images/desktop/image-fisheye.jpg" alt="image-fisheye" />
-            </picture>
-            <span>Make it fisheye</span>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-flex">
+            <div class="about-img">
+              <img
+                src="./images/desktop/image-interactive.jpg"
+                alt="Man standing at with VR headset "
+              />
+            </div>
+            <div class="about-text">
+              <h2>The leader in interactive VR</h2>
+              <p>
+                Founded in 2011, Loopstudios has been producing world-class
+                virtual reality projects for some of the best companies around
+                the globe. Our award-winning creations have transformed
+                businesses through digital experiences that bind to their brand.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <div class="products-call">
+            <h2>Our creations</h2>
+            <button class="btn-products">See all</button>
+          </div>
+
+          <div class="card-grid">
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-deep-earth.jpg"
+                />
+                <img
+                  src="images/desktop/image-deep-earth.jpg"
+                  alt="deep-earth"
+                />
+              </picture>
+              <span>Deep earth</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-night-arcade.jpg"
+                />
+                <img
+                  src="images/desktop/image-night-arcade.jpg"
+                  alt="night-arcade"
+                />
+              </picture>
+              <span>Night arcade </span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-soccer-team.jpg"
+                />
+                <img
+                  src="images/desktop/image-soccer-team.jpg"
+                  alt="soccer-team"
+                />
+              </picture>
+              <span>Soccer team VR</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-grid.jpg"
+                />
+                <img src="images/desktop/image-grid.jpg" alt="image-grid" />
+              </picture>
+              <span>The grid</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-from-above.jpg"
+                />
+                <img
+                  src="images/desktop/image-from-above.jpg"
+                  alt="image-from-above"
+                />
+              </picture>
+              <span class="up">From up above vr</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-pocket-borealis.jpg"
+                />
+                <img
+                  src="images/desktop/image-pocket-borealis.jpg"
+                  alt="pocket-borealis"
+                />
+              </picture>
+              <span>Pocket borealis</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-curiosity.jpg"
+                />
+                <img src="images/desktop/image-curiosity.jpg" alt="curiosity" />
+              </picture>
+              <span>The curiosity</span>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="images/mobile/image-fisheye.jpg"
+                />
+                <img
+                  src="images/desktop/image-fisheye.jpg"
+                  alt="image-fisheye"
+                />
+              </picture>
+              <span>Make it fisheye</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer" id="footer">
       <div class="container">
@@ -152,10 +197,12 @@
             </a>
           </div>
           <div class="social-icons">
-            <a href="#"
-              ><img src="./images/icon-facebook.svg" alt="FaceBook"
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="FaceBook"
             /></a>
-            <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="Twitter"
+            /></a>
             <a href="#"
               ><img src="./images/icon-pinterest.svg" alt="Pinterest"
             /></a>
@@ -163,17 +210,17 @@
               ><img src="./images/icon-instagram.svg" alt="Instagram"
             /></a>
           </div>
-       
+
           <ul class="menu-footer">
             <li><a href="#about"> About</a></li>
-            <li><a href="#"> Careers</a></li>
-            <li><a href="#"> Events</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Events</a></li>
             <li><a href="#products"> Products</a></li>
             <li><a href="#footer"> Support</a></li>
           </ul>
           <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
         </div>
-       
+      </div>
     </footer>
 
     <script src="script.js"></script>
