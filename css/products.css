@@ -1,0 +1,135 @@
+/* Products */
+.products {
+  padding: 1rem;
+  position: relative;
+}
+.products-call {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  margin-bottom: 5rem;
+}
+.products-call h1 {
+  font-size: 3rem;
+  font-family: var(--type-second);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+.products-call .btn-products {
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid var(--very-dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: var(--type-first);
+  font-weight: 400;
+  color: var(--black);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.products .btn-products:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.card {
+  position: relative;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  color: var(--white);
+  transition: color 0.2s;
+}
+.card:hover {
+  color: var(--black);
+}
+
+.card span {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-align: left;
+  font-size: 2rem;
+  font-family: var(--type-second);
+  font-weight: 300;
+  text-transform: uppercase;
+  max-width: 145px;
+}
+
+.card .up {
+  max-width: 205px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
+
+  width: 100%;
+  height: 100%;
+}
+.card:hover::before {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .products {
+    padding-bottom: 4rem;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-family: var(--type-second);
+    font-weight: 300;
+    text-transform: uppercase;
+    max-width: 145px;
+  }
+  .products-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .products-call .btn-products {
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: var(--type-first);
+    font-weight: 400;
+    color: var(--black);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    bottom: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 376px) {
+  .products {
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+  .products-call {
+    margin-bottom: 2.5rem;
+  }
+}

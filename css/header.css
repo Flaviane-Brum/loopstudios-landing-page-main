@@ -1,0 +1,173 @@
+/* HEADER */
+
+.header {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 1rem;
+
+  position: relative;
+}
+.container-header {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 3rem 1rem;
+}
+.container-flex .header-logo {
+  position: relative;
+  z-index: 111;
+}
+.btn-menu {
+  display: none;
+}
+
+.nav .menu {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.nav .menu a {
+  padding: 0.625rem;
+  color: var(--white);
+  cursor: pointer;
+  position: relative;
+}
+.nav .menu a::after {
+  content: "";
+  display: none;
+  width: 0px;
+  height: 0px;
+  background-color: var(--white);
+  position: absolute;
+}
+.nav .menu a:hover::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--white);
+  left: 20px;
+  bottom: -5px;
+}
+.banner {
+  margin: 8rem 0 5rem 0;
+  border: 3px solid var(--white);
+  max-width: 625px;
+  padding: 2rem;
+  position: relative;
+}
+.banner h1 {
+  font-size: 4.5rem;
+  font-family: var(--type-second);
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--white);
+}
+@media (max-width: 768px) {
+  .btn-menu {
+    display: block;
+    position: relative;
+    z-index: 100;
+    border: 0;
+    border-top: 2px solid #fff;
+    background-color: transparent;
+    width: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-menu::before,
+  .btn-menu::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: 0.3s;
+  }
+  .nav.active .btn-menu {
+    border-top-color: transparent;
+  }
+  .nav.active .btn-menu::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .btn-menu::after {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -7px;
+  }
+  .container-flex .header-logo {
+    z-index: 100;
+  }
+
+  .nav .menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 99;
+  }
+  .nav.active .menu {
+    height: 100vh;
+    visibility: visible;
+  }
+
+  .nav .menu li {
+    position: relative;
+    top: 130px;
+    padding: 1rem 0;
+  }
+  .nav .menu a {
+    padding: 0.625rem;
+    color: var(--white);
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--type-second);
+    font-weight: 300;
+  }
+}
+@media (max-width: 528px) {
+  .banner {
+    max-width: 320px;
+    margin: 8rem auto;
+  }
+  .banner h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 376px) {
+  .banner {
+    max-width: 280px;
+    margin: 8rem auto;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+}
