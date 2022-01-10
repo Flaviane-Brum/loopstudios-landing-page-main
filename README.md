@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution ](#)
-- Live Site URL: [Loopstudios landing page](#)
+- Solution URL: [Solution ](https://www.frontendmentor.io/solutions/loopstudios-landing-page-using-css-grid-flexbox-html5-and-js-5V2Qz1lWM)
+- Live Site URL: [Loopstudios landing page](https://flaviane-brum.github.io/loopstudios-landing-page-main/)
 
 ### Built with
 
